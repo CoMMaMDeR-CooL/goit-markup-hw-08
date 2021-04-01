@@ -10,11 +10,11 @@
   display: flex;
   align-items: center;
 }
-.navigation {
+.nav {
   display: flex;
   align-items: center;
 }
-.nav-list {
+.nav__list {
   display: flex;
   align-items: center;
 }
@@ -23,9 +23,12 @@
   align-items: center;
   margin-left: auto;
 }
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
+.contacts-list__contacts-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
+
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -37,10 +40,10 @@
 .half-logo {
   color: var(--accent-color);
 }
-.nav-item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-link {
+.nav__link {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;

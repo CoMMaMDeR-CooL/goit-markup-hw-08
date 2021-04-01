@@ -32,7 +32,7 @@ footer {
 .adress:not(:first-child) {
   margin-top: 9px;
 }
-.bottom-subtitle {
+.bottom-social__subtitle {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -48,7 +48,7 @@ footer .container {
   padding-top: 12px;
 }
 
-.bottom-social-link {
+.bottom-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,18 +63,18 @@ footer .container {
   }
 }
 
-.bottom-icon {
+.bottom-social__icon {
   width: 20px;
   height: 20px;
   fill: #fff;
 }
-.bottom-social-list {
+.bottom-social__list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
-.bottom-social-item:not(:first-child) {
+.bottom-social__item:not(:first-child) {
   margin-left: 10px;
 }
 .social-form {
@@ -88,12 +88,12 @@ footer .container {
   text-transform: uppercase;
   color: #ffffff;
 }
-.bottom-comment-form {
+.social-form__coment {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
-.input-comment {
+.social-form__input {
   width: 360px;
   height: 50px;
   padding: 15px 16px;
@@ -110,7 +110,7 @@ footer .container {
     color: rgba(255, 255, 255, 0.6);
   }
 }
-.send-icon {
+.social-form__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;

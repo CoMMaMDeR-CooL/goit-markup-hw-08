@@ -2,18 +2,18 @@
   padding-top: 94px;
   padding-bottom: 47px;
 }
-.features-list {
+.features__list {
   margin-left: -30px;
   margin-top: -30px;
   display: flex;
 }
-.features-item {
+.features__item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 4 - 30px);
 }
 
-.features-sub {
+.features__sub {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -27,7 +27,7 @@
   margin-top: -30px;
   margin-bottom: 30px;
 }
-.feat-item {
+.feat__item {
   border-radius: 4px;
   background-color: #f5f4fa;
   width: 270px;
@@ -35,7 +35,7 @@
   padding: 25px 100px;
   margin-bottom: 30px;
 }
-.feat-icon {
+.feat__icon {
   width: 70px;
   height: 70px;
   transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);

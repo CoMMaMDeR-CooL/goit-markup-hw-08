@@ -1,4 +1,4 @@
-.modal-form {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
@@ -12,7 +12,7 @@
   margin-bottom: 12px;
   display: block;
 }
-.modal-input {
+.modal__input {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   height: 40px;
@@ -20,19 +20,19 @@
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus {
+.modal__input:focus {
   border-color: var(--accent-color);
   outline: none;
 }
-.modal-input:focus + .modal-icon {
+.modal__input:focus + .modal__icon {
   fill: var(--accent-color);
 }
-.modal-form-input-wrapper {
+.modal__wrapper {
   position: relative;
   display: block;
   margin-top: 4px;
 }
-.modal-icon {
+.modal__icon {
   height: 18px;
   width: 18px;
   position: absolute;
@@ -41,14 +41,14 @@
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.label-text {
+.label__text {
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--font-color);
 }
-.label-text-message {
+.label__text-message {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -76,7 +76,7 @@
 .term {
   color: var(--accent-color);
 }
-.modal-form-check-desc {
+.modal__check-desc {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -86,7 +86,7 @@
   align-items: center;
   padding-left: 12px;
 }
-.modal-form-check-desc::before {
+.modal__check-desc::before {
   content: "";
   display: block;
   width: 16px;
@@ -96,18 +96,18 @@
   cursor: pointer;
   margin-right: 8px;
 }
-.modal-form-term:checked + .modal-form-check-desc::before {
+.modal__form-term:checked + .modal__check-desc::before {
   background-color: var(--accent-color);
   background-image: url("../images/svg/checked.svg");
   background-position: center;
   background-repeat: no-repeat;
   border-color: var(--accent-color);
 }
-/* .modal-form-term:focus + .modal-form-check-desc::before {
+/* .modal__form-term:focus + .modal__check-desc::before {
   box-shadow: 0 0 0 2px #2196f3;
 } */
 
-.modal-form-btn {
+.modal__form-btn {
   margin-top: 30px;
   min-width: 200px;
   color: #fff;

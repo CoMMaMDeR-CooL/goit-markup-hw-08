@@ -1,4 +1,4 @@
-.social-list-link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,15 +12,18 @@
   }
 }
 
-.social-list {
+.social {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.social-item:not(:first-child) {
-  margin-left: 10px;
+.social__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
 }
-.social-list-icon {
+
+.social__icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
