@@ -16,18 +16,24 @@
 </head>
 <body>
     <header class="head">
-        <div class="container">
-            <!----------Nav-------------->
-        <nav class="nav">
-            <!------------Logo----------->
+        <div class="container">           
+         <nav class="nav">
+           
             <a href="./index.html" class="link logo dark-theme" title="The Best WebStudio Ever!"><span
                     class="half-logo">Web</span>Studio</a>
+           
             <ul class="nav__list">
                 <li class="list nav__item"><a href="./index.html" class="selected link nav__link">Студия</a></li>
                 <li class="list nav__item"><a href="./portfolio.html" class="link nav__link">Портфолио</a></li>
                 <li class="list nav__item"><a href="#" class="link nav__link">Контакты</a></li>
             </ul>
         </nav>
+
+        <button type="button" class="burger-btn" data-menu-button>
+            <svg class="burger-icon">
+                <use href="./images/svg/icon.svg#icon-burger"></use>
+            </svg>
+        </button>
         <!---------Contacts-------->
         <ul class="contacts-list">
             <li class="list contacts-list__contacts-item">
@@ -44,26 +50,64 @@
             </svg>+38 098 750 08 88</a>
                 </li>
         </ul>
+        </div>
+
+    <div class="mob-menu" data-menu>
+        <button type="button" class="mob-menu__close-btn" data-menu-close>
+            <svg class="mob-menu__x">
+                <use href="./images/svg/icon.svg#icon-x"></use>
+            </svg>
+        </button>
+        <ul class="mob-menu__list list">
+
+            <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link link">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+            </li>
+            <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Контакты</a>
+            </li>
+            
+        </ul>
+
+        <ul class="mob-contacts list">
+            <li class="mob-contacts__tell"><a href=""></a>
+            </li>
+            <li class="mob-contacts__email"><a href=""></a>
+            </li>
+        </ul>
+
+        <ul class="mob-social list">
+            <li class="mob-social_item"><a href="" class="mobsocial__link link"></a>
+            </li>
+            <li class="mob-social_item"><a href="" class="mobsocial__link link"></a>
+            </li>
+            <li class="mob-social_item"><a href="" class="mobsocial__link link"></a>
+            </li>
+            <li class="mob-social_item"><a href="" class="mobsocial__link link"></a>
+            </li>
+        </ul>
     </div>
     
-
     </header>
     <main>    
         <!-----Banner-------->
-        <section class="hero">
+        <!-- <section class="hero">
         <div class="container">
             <h1 class="first-title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="btn" name="send" title="Подумай Хорошенько" data-modal-open>Заказать Услугу</button>
         </div>
-        </section>
+        </section> -->
        <!--------Features------->
-        <section class="features">
-            <div class="container">
+        <!-- <section class="features">
+            <div class="container"> -->
                 <!-------Hiiden H!!!------>
-                <h2 class="visually-hidden">Особенности</h2>
+                <!-- <h2 class="visually-hidden">Особенности</h2> -->
                 <!-------Hiiden H!!!------>
             
-                <ul class="features__list">
+                <!-- <ul class="features__list">
                     <li class="features__item list">
                         <div class="feat__item">
                         <svg class="feat__icon">
@@ -103,9 +147,9 @@
                 </ul>
             </div>
            
-        </section>
+        </section> -->
         <!-------------Our Job-------->
-        <section class="job">
+        <!-- <section class="job">
             <div class="container">
             <h2 class="second-title">Чем мы занимаемся</h2>
             <ul class="job__list">
@@ -133,9 +177,9 @@
                    
             </ul>
             </div>
-        </section>  
+        </section>   -->
         <!--------Team-------->      
-        <section class="team">
+        <!-- <section class="team">
             <div class="container">
                 <h2 class="second-title">Наша команда</h2>
                 <ul class="team__list">
@@ -291,8 +335,8 @@
                 </ul>
             </div>
             
-        </section>
-        <section class="stabil">
+        </section> -->
+        <!-- <section class="stabil">
             <div class="container">
                 <h2 class="second-title">Постоянные клиенты</h2>  
                 <ul class="stabil__list">
@@ -341,10 +385,10 @@
                 </ul>  
             </div>
            
-        </section>
+        </section> -->
     </main>
         <!------Footer------->
-        <footer>
+        <!-- <footer>
             <div class="container">
                 <div class="bottom-adress"><a href="./index.html" title="The Best WebStudio Ever!" class="link logo-bottom light-theme"><span
                         class="half-logo">Web</span>Studio</a>
@@ -408,9 +452,9 @@
             
             </div>
            
-        </footer>
+        </footer> -->
         <!--------BackDrop------->
-        <div class="backdrop is-hidden" data-modal>
+        <!-- <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal__btn" data-modal-close>
                     <svg class="x-icon">
@@ -457,7 +501,8 @@
                     </form>
                 
             </div>
-        </div>
-        <script src="./js/modal.js"></script>
+        </div> -->
+        <script src="js/mobile-menu.js"></script>
+        <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
