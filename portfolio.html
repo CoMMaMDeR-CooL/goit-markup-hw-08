@@ -20,59 +20,82 @@
   </head>
 
   <body>
-    <header class="head">
-      <div class="container">
-        <!----------Nav-------------->
-        <nav class="nav">
-          <!------------Logo----------->
-          <a
-            href="./index.html"
-            class="link logo dark-theme"
-            title="The Best WebStudio Ever!"
-            ><span class="half-logo">Web</span>Studio</a
-          >
-          <ul class="nav__list">
-            <li class="list nav__item">
-              <a href="./index.html" class="link nav__link">Студия</a>
-            </li>
-            <li class="list nav__item">
-              <a href="./portfolio.html" class="selected link nav__link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="list nav__item">
-              <a href="#" class="link nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <!---------Contacts-------->
-        <ul class="contacts-list">
-          <li class="list contacts-list__contacts-item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="link phone-mail nav__link"
-              title="Got mail?"
-            >
-              <svg class="nav__icon" width="16px" height="12px">
-                <use href="./images/svg/icon.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="list contacts-list__contacts-item">
-            <a
-              href="tel:+380987500888"
-              class="link phone-mail nav__link"
-              title="YOU HAVE 3 DAYS....."
-            >
-              <svg class="nav__icon" width="10px" height="16px">
-                <use href="./images/svg/icon.svg#icon-smartphone"></use></svg
-              >+38 098 750 08 88</a
-            >
-          </li>
+  <header class="head">
+    <div class="container">
+      <nav class="nav">
+  
+        <a href="./index.html" class="link logo dark-theme" title="The Best WebStudio Ever!"><span
+            class="half-logo">Web</span>Studio</a>
+  
+        <ul class="nav__list">
+          <li class="list nav__item"><a href="./index.html" class="link nav__link">Студия</a></li>
+          <li class="list nav__item"><a href="./portfolio.html" class="selected link nav__link">Портфолио</a></li>
+          <li class="list nav__item"><a href="#" class="link nav__link">Контакты</a></li>
         </ul>
-      </div>
-    </header>
+      </nav>
+  
+      <button type="button" class="burger-btn" data-menu-button>
+        <svg class="burger-icon">
+          <use href="./images/svg/icon.svg#icon-burger"></use>
+        </svg>
+      </button>
+  
+      <ul class="contacts-list">
+        <li class="list contacts-list__contacts-item">
+          <a href="mailto:info@devstudio.com" class="link phone-mail nav__link" title="Got mail?">
+            <svg class="nav__icon" width="16px" height="12px">
+              <use href="./images/svg/icon.svg#icon-mail"></use>
+            </svg> info@devstudio.com</a>
+        </li>
+        <li class="list contacts-list__contacts-item">
+          <a href="tel:+380987500888" class="link phone-mail nav__link" title="YOU HAVE 3 DAYS.....">
+            <svg class="nav__icon" width="10px" height="16px">
+              <use href="./images/svg/icon.svg#icon-smartphone"></use>
+            </svg>+38 098 750 08 88</a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="mob-menu" data-menu>
+      <button type="button" class="mob-menu__close-btn" data-menu-close>
+        <svg class="mob-menu__x">
+          <use href="./images/svg/icon.svg#icon-x"></use>
+        </svg>
+      </button>
+      <ul class="mob-menu__list list">
+  
+        <li class="mob-menu__item">
+          <a href="./index.html" class="mob-menu__link link">Студия</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="" class="mob-menu__link link">Контакты</a>
+        </li>
+  
+      </ul>
+  
+      <ul class="mob-contacts list">
+        <li class="mob-contacts__item"><a href="#" class="mob-contacts__tell link">+38 096 111 11 11</a>
+        </li>
+        <li class="mob-contacts__item"><a href="#" class="mob-contacts__email link">info@devstudio.com</a>
+        </li>
+      </ul>
+  
+      <ul class="mob-social list">
+        <li class="mob-social__item"><a href="" class="mob-social__link link">Instagram</a>
+        </li>
+        <li class="mob-social__item"><a href="" class="mob-social__link link">Twitter</a>
+        </li>
+        <li class="mob-social__item"><a href="" class="mob-social__link link">Facebook</a>
+        </li>
+        <li class="mob-social__item"><a href="" class="mob-social__link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  
+  </header>
 
     <main>
       <!--Buttons-->
@@ -140,13 +163,16 @@
             <li class="picture-item list">
               <a href="#" class="picture-item__link link">
                 <div class="overlay-block">
-                  <img
-                    src="./images/portfolio-img/technokrjak.jpg"
-                    alt="technokrjak.jpg"
-                    title="Их розыскивают"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/desktop/1_dt_370x294.jpg 1x, ./images/desktop/1_dt_370x294_x2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./images/tablet/1_tablet_354x294.jpg 1x, ./images/tablet/1_tablet_354x294_x2.jpg 2x"
+                      media="(min-width: 768px)">
+                    <source srcset="./images/mobile/1_mobile_450x294.jpg 1x, ./images/mobile/1_mobile_450x294_x2.jpg 2x"
+                      media="(min-width: 320px)">
+                    <img src="./images/portfolio-img/technokrjak.jpg" alt="technokrjak.jpg" title="Их розыскивают"/>
+                  </picture>
+                  
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -163,13 +189,16 @@
             <li class="picture-item list">
               <a href="#" class="picture-item__link link">
                 <div class="overlay-block">
-                  <img
-                    src="./images/portfolio-img/new-orlean.jpg"
-                    alt="new-orlean.jpg"
-                    title="Space JAM!"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/desktop/2_dt_370x294.jpg 1x, ./images/desktop/2_dt_370x294_x2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./images/tablet/2_tablet_354x294.jpg 1x, ./images/tablet/2_tablet_354x294_x2.jpg 2x"
+                      media="(min-width: 768px)">
+                    <source srcset="./images/mobile/2_mobile_450x294.jpg 1x, ./images/mobile/2_mobile_450x294_x2.jpg 2x"
+                      media="(min-width: 320px)">
+                      <img src="./images/portfolio-img/new-orlean.jpg" alt="new-orlean.jpg" title="Space JAM!"/>
+                  </picture>
+                 
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -188,13 +217,16 @@
             <li class="picture-item list">
               <a href="#" class="picture-item__link link">
                 <div class="overlay-block">
-                  <img
-                    src="./images/portfolio-img/seafood.jpg"
-                    alt="seafood.jpg"
-                    title="YUMMY!!!"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/desktop/3_dt_370x294.jpg 1x, ./images/desktop/3_dt_370x294_x2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./images/tablet/3_tablet_354x294.jpg 1x, ./images/tablet/3_tablet_354x294_x2.jpg 2x"
+                      media="(min-width: 768px)">
+                    <source srcset="./images/mobile/3_mobile_450x294.jpg 1x, ./images/mobile/3_mobile_450x294_x2.jpg 2x"
+                      media="(min-width: 320px)">
+                      <img src="./images/portfolio-img/seafood.jpg" alt="seafood.jpg" title="YUMMY!!!" />
+                  </picture>
+                  
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -211,13 +243,16 @@
             <li class="picture-item list">
               <a href="#" class="picture-item__link link">
                 <div class="overlay-block">
-                  <img
-                    src="./images/portfolio-img/prime.jpg"
-                    alt="prime.jpg"
-                    title="Хорошая музыка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/desktop/4_dt_370x294.jpg 1x, ./images/desktop/4_dt_370x294_x2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./images/tablet/4_tablet_354x294.jpg 1x, ./images/tablet/4_tablet_354x294_x2.jpg 2x"
+                      media="(min-width: 768px)">
+                    <source srcset="./images/mobile/4_mobile_450x294.jpg 1x, ./images/mobile/4_mobile_450x294_x2.jpg 2x"
+                      media="(min-width: 320px)">
+                      <img src="./images/portfolio-img/prime.jpg" alt="prime.jpg" title="Хорошая музыка"/>
+                  </picture>
+                 
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -234,13 +269,16 @@
             <li class="picture-item list">
               <a href="#" class="picture-item__link link">
                 <div class="overlay-block">
-                  <img
-                    src="./images/portfolio-img/boxes.jpg"
-                    alt="boxes.jpg"
-                    title="Картон,не больше,не меньше"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/desktop/5_dt_370x294.jpg 1x, ./images/desktop/5_dt_370x294_x2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./images/tablet/5_tablet_354x294.jpg 1x, ./images/tablet/5_tablet_354x294_x2.jpg 2x"
+                      media="(min-width: 768px)">
+                    <source srcset="./images/mobile/5_mobile_450x294.jpg 1x, ./images/mobile/5_mobile_450x294_x2.jpg 2x"
+                      media="(min-width: 320px)">
+                      <img src="./images/portfolio-img/boxes.jpg" alt="boxes.jpg" title="Картон,не больше,не меньше"/>
+                  </picture>
+                  
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -258,13 +296,16 @@
             <li class="picture-item list">
               <a href="#" class="picture-item__link link">
                 <div class="overlay-block">
-                  <img
-                    src="./images/portfolio-img/inspiration.jpg"
-                    alt="inspiration.jpg"
-                    title="Вдохновляем вдохновлять"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                      <source srcset="./images/desktop/6_dt_370x294.jpg 1x, ./images/desktop/6_dt_370x294_x2.jpg 2x"
+                        media="(min-width: 1200px)">
+                      <source srcset="./images/tablet/6_tablet_354x294.jpg 1x, ./images/tablet/6_tablet_354x294_x2.jpg 2x"
+                        media="(min-width: 768px)">
+                      <source srcset="./images/mobile/6_mobile_450x294.jpg 1x, ./images/mobile/6_mobile_450x294_x2.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img src="./images/portfolio-img/inspiration.jpg" alt="inspiration.jpg" title="Вдохновляем вдохновлять"/>
+                  </picture>
+                  
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -284,13 +325,16 @@
             <li class="picture-item list">
               <a href="#" class="picture-item__link link">
                 <div class="overlay-block">
-                  <img
-                    src="./images/portfolio-img/limited.jpg"
-                    alt="limited.jpg"
-                    title="одна штучка в одни ручки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                      <source srcset="./images/desktop/7_dt_370x294.jpg 1x, ./images/desktop/7_dt_370x294_x2.jpg 2x"
+                        media="(min-width: 1200px)">
+                      <source srcset="./images/tablet/7_tablet_354x294.jpg 1x, ./images/tablet/7_tablet_354x294_x2.jpg 2x"
+                        media="(min-width: 768px)">
+                      <source srcset="./images/mobile/7_mobile_450x294.jpg 1x, ./images/mobile/7_mobile_450x294_x2.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img src="./images/portfolio-img/limited.jpg" alt="limited.jpg" title="одна штучка в одни ручки"/>
+                  </picture>
+                  
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -308,13 +352,16 @@
             <li class="picture-item list">
               <a href="#" class="picture-item__link link">
                 <div class="overlay-block">
-                  <img
-                    src="./images/portfolio-img/lab.jpg"
-                    alt="lab.jpg"
-                    title="Mr.White"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/desktop/8_dt_370x294.jpg 1x, ./images/desktop/8_dt_370x294_x2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./images/tablet/8_tablet_354x294.jpg 1x, ./images/tablet/8_tablet_354x294_x2.jpg 2x"
+                      media="(min-width: 768px)">
+                    <source srcset="./images/mobile/8_mobile_450x294.jpg 1x, ./images/mobile/8_mobile_450x294_x2.jpg 2x"
+                      media="(min-width: 320px)">
+                      <img src="./images/portfolio-img/lab.jpg" alt="lab.jpg" title="Mr.White"/>
+                  </picture>
+                 
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -331,13 +378,16 @@
             <li class="picture-item list">
               <a href="#" class="picture-item__link link">
                 <div class="overlay-block">
-                  <img
-                    src="./images/portfolio-img/growing.jpg"
-                    alt="growing.jpg"
-                    title="Просто добавь воды"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/desktop/9_dt_370x294.jpg 1x, ./images/desktop/9_dt_370x294x2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./images/tablet/9_tablet_354x294.jpg 1x, ./images/tablet/9_tablet_354x294_x2.jpg 2x"
+                      media="(min-width: 768px)">
+                    <source srcset="./images/mobile/9_mobile_450x294.jpg 1x, ./images/mobile/9_mobile_450x294_x2.jpg 2x"
+                      media="(min-width: 320px)">
+                      <img src="./images/portfolio-img/growing.jpg" alt="growing.jpg" title="Просто добавь воды"/>
+                  </picture>
+                 
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -359,43 +409,27 @@
     <footer>
       <div class="container">
         <div class="bottom-adress">
-          <a
-            href="./index.html"
-            title="The Best WebStudio Ever!"
-            class="link logo-bottom light-theme"
-            ><span class="half-logo">Web</span>Studio</a
-          >
+          <a href="./index.html" title="The Best WebStudio Ever!" class="link logo-bottom light-theme"><span
+              class="half-logo">Web</span>Studio</a>
           <address>
             <ul class="adress-list">
               <li class="adress list light-theme">
-                <a
-                  href="https://goo.gl/maps/CmGL8vCXxkBH8vGz7"
-                  class="link adress-map nav__link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+                <a href="https://goo.gl/maps/CmGL8vCXxkBH8vGz7" class="link adress-map nav__link" target="_blank"
+                  rel="noopener noreferrer">г. Киев, пр-т Леси Украинки,
+                  26</a>
               </li>
               <li class="adress list mail light-theme">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="link bottom-adress nav__link"
-                  title="Got mail?"
-                  >info@devstudio.com</a
-                >
+                <a href="mailto:info@devstudio.com" class="link bottom-link nav__link"
+                  title="Got mail?">info@devstudio.com</a>
               </li>
               <li class="adress list phone light-theme">
-                <a
-                  href="tel:+380987500888"
-                  class="link bottom-adress nav__link"
-                  title="YOU HAVE 3 DAYS....."
-                  >+38 098 750 08 88</a
-                >
+                <a href="tel:+380987500888" class="link bottom-link nav__link" title="YOU HAVE 3 DAYS.....">+38 098 750 08
+                  88</a>
               </li>
             </ul>
           </address>
         </div>
-
+    
         <div class="bottom-social">
           <b class="bottom-social__subtitle">присоединяйтесь</b>
           <ul class="bottom-social__list list">
@@ -432,21 +466,18 @@
         <div class="social-form">
           <b class="bottom-bold-text">Подпишитесь на рассылку</b>
           <form action="#" class="social-form__coment">
-            <input
-              type="email"
-              name="email"
-              class="social-form__input"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="social-form__btn">
-              Подписаться
+            <input type="email" name="email" class="social-form__input" placeholder="E-mail" required>
+            <button type="submit" class="social-form__btn">Подписаться
               <svg class="social-form__icon">
                 <use href="./images/svg/icon.svg#icon-icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
+    
       </div>
+    
     </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
