@@ -1007,6 +1007,12 @@ header .container {
   padding-bottom: var(--section-pb);
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
